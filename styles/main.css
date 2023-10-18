@@ -1,14 +1,20 @@
+h1 {
+  color: #041552;
+  font-family: Gabarito, sans-serif;
+}
+
 .header {
   background-image: url("https://images.unsplash.com/photo-1555414244-80c33ca2e497?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1770");
 }
 
-button {
+.btn-style {
   background-color: #B19027;
+  font-family: Gabarito, sans-serif;
 }
-button:hover {
+.btn-style:hover {
   background-color: #D5BC20;
 }
-button:active {
+.btn-style:active {
   background-color: #D5BC20;
 }
 
