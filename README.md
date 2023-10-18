@@ -1,4 +1,4 @@
-# PasaheroGuide
+# Pasahero Guide
 
 **One stop site for your commuting needs!**
 
@@ -6,7 +6,7 @@ As a *probinsyana*, I always feel anxious whenever I travel from my province to 
 
 Therefore, I decided to develop this website for people who is commuting for the first time, for people who often ride the public transpo, for people like me.
 
-**PasaheroGuide** will initially have this function:
+**Pasahero Guide** will initially have this function:
 
 * Filipino-style of giving directions:
     * "Sakay ka ng *(jeep/tricycle/bus/van)* na byaheng *(location)*. Tapos..."
