@@ -4,14 +4,26 @@ $title:#041552;
 $subtitle:#97949D;
 $button:#B19027;
 $hover:#D5BC20;
-$accent: #69050C;
+$accent: #FFFFFF;
 
 // Font
 $main-font: Gabarito, sans-serif;
+$sub-font: Montserrat, sans-serif;
 
 // Size
 $max-height:100vh;
 $max-width:100vw;
+
+// Space
+$default-margin: 0 auto;
+
+// SASS Mixins
+@mixin  default-background-set {
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $max-height;
+}
 
 html, body{
     margin: 0;
@@ -23,32 +35,43 @@ body {
 }
 
 .header {
-    background-image: url('https://images.unsplash.com/photo-1555414244-80c33ca2e497?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1770');
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    height: $max-height;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/508da03be4b0d28844ddf21c/1479301999170-CL6H8CTM6478G16WAOEA/image-asset.jpeg?format=1500w');
+    @include default-background-set;
+
+    text-align: left;
+    box-shadow: inset 800px 0px 200px -70px $accent;
 }
 
 .container {
-    margin: 0 auto;
+    margin: $default-margin;
     max-width: $max-width;
 }
 
 .header .container {
     position: relative;
-    top: 200px;
+    top: 30%;
 }
 
 .header h1 {
     color: $title;
     font-size: 80px;
-    margin-top: 0;
-    margin-bottom: 80px;
+    margin: $default-margin;
+    padding-left: 2%;
+    padding-right: 50%;
     text-transform: uppercase; 
   }
 
+  .header h2 {
+    color: $subtitle;
+    font-size: 40px;
+    font-family: $sub-font;
+    font-weight: 400;
+    margin: $default-margin;
+    padding-left: 2%;
+    padding-right: 50%;
+  }
+
+//  SASS Nesting
 .btn-style {
     background-color: $button;
     font-family: $main-font;
